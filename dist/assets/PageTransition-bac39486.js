@@ -1,0 +1,1 @@
+import{j as t}from"./index-ba9de34c.js";import{m as o}from"./ui-vendor-41bf3afe.js";const e=({children:i})=>t.jsx(o.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0,margin:"-100px"},transition:{duration:.5,ease:"easeOut"},children:i});export{e as P};
