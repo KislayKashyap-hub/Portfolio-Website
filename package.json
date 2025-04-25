@@ -7,9 +7,9 @@
   "dev": "vite",
   "build": "vite build",
   "preview": "vite preview",
-  "start": "vite",
-  "postinstall": "chmod +x node_modules/.bin/vite"
+  "start": "vite"
 }
+
 ,
  "dependencies": {
   "@heroicons/react": "^2.2.0",
