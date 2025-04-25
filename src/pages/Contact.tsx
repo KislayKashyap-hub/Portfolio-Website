@@ -90,12 +90,21 @@ const Contact = () => {
     setSubmitStatus('idle')
 
     try {
-      // Add your form submission logic here
-      // For now, we'll simulate an API call
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', message: '' })
+      // Formspree Integration: Replace with your form endpoint
+      const response = await fetch('https://formspree.io/f/xqaqkrro', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', message: '' })
+      } else {
+        setSubmitStatus('error')
+      }
     } catch (error) {
       setSubmitStatus('error')
     } finally {
@@ -244,4 +253,4 @@ const Contact = () => {
   )
 }
 
-export default Contact 
+export default Contact
