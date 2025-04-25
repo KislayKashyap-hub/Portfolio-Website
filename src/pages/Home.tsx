@@ -8,30 +8,32 @@ const skills = {
     'Lightning Web Components (LWC)',
     'Apex',
     'Flow Builder',
-    'Einstein AI',
-    'Agentforce',
+    'Einstein AI & Agentforce',
     'Integration',
     'SOQL/SOSL'
   ],
   webDevelopment: [
-    'JavaScript/TypeScript',
-    'React.js',
+    'JavaScript',
     'Node.js',
-    'HTML5/CSS3',
-    'Tailwind CSS',
-    'REST APIs'
+    'HTML',
+    'CSS',
+    'REST APIs',
+    'SQL & NoSQL',
   ],
   cloud: [
-    'AWS Services',
+    'Salesforce Platform',
     'Data Services',
-    'Cloud Architecture'
+    'Cloud Architecture',
+    'Data Cloud',
+    'SaaS'
+
   ],
   tools: [
     'Git',
     'VS Code',
     'Postman',
-    'JIRA',
-    'Agile Methodologies'
+    'Linux',
+    'CLI',
   ]
 };
 
