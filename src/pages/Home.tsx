@@ -63,19 +63,21 @@ const Home = () => {
                 Certified Salesforce Developer | LWC, Apex, AI & CRM Solutions
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
-                <a
-                  href="/KislayKumar-CV.pdf"
-                  download
-                  className="btn-primary w-full sm:w-auto"
-                >
-                  Download Resume
-                </a>
-                <Link
-                  to="/projects"
-                  className="btn-secondary w-full sm:w-auto"
-                >
-                  View Projects
-                </Link>
+              <a
+                   href="https://drive.google.com/uc?export=download&id=1XD8nsy1NTA9bRoFl6n2zK4-5F62c3D57"
+                 target="_blank"
+                   rel="noopener noreferrer"
+              className="px-6 py-3 rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300 shadow-lg w-full sm:w-auto text-center"
+          >
+         Download Resume
+      </a>
+      <Link
+         to="/projects"
+          className="px-6 py-3 rounded-full text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg w-full sm:w-auto text-center"
+      >
+         View Projects
+          </Link>
+
               </div>
             </motion.div>
 
@@ -176,38 +178,7 @@ const Home = () => {
           </motion.div>
 
           {/* Scroll Indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-            className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-10"
-          >
-            <div className="flex flex-col items-center cursor-pointer"
-                 onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
-              <span className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                Scroll to explore
-              </span>
-              <motion.div
-                className="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full p-1"
-                animate={{ y: [0, 5, 0] }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity,
-                  repeatType: 'reverse',
-                }}
-              >
-                <motion.div
-                  className="w-2 h-2 bg-gray-400 dark:bg-gray-600 rounded-full"
-                  animate={{ y: [0, 12, 0] }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity,
-                    repeatType: 'reverse',
-                  }}
-                ></motion.div>
-              </motion.div>
-            </div>
-          </motion.div>
+          
         </div>
       </div>
     </PageTransition>

@@ -78,8 +78,8 @@ const About = () => {
 
               <div className="mt-8 text-center">
                 <a
-                  href="/KislayKumar-CV.pdf"
-                  download
+                   href="https://drive.google.com/uc?export=download&id=1XD8nsy1NTA9bRoFl6n2zK4-5F62c3D57"
+                   download
                   className="btn-primary inline-flex items-center"
                 >
                   <span>Download Resume</span>

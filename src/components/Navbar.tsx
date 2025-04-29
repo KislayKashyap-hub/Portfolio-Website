@@ -47,13 +47,13 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <a
-              href="https://drive.google.com/file/d/1XD8nsy1NTA9bRoFl6n2zK4-5F62c3D57/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
-              Download Resume
+           <a
+                   href="https://drive.google.com/uc?export=download&id=1XD8nsy1NTA9bRoFl6n2zK4-5F62c3D57"
+                 target="_blank"
+                   rel="noopener noreferrer"
+              className="px-6 py-3 rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300 shadow-lg w-full sm:w-auto text-center"
+          >
+         Download Resume
             </a>
             <button
               onClick={toggleTheme}

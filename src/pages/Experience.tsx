@@ -15,7 +15,7 @@ const experiences: Experience[] = [
   {
     title: 'Associate Software Engineer',
     company: 'Techila Global Services',
-    period: 'Sep 2023 - Present',
+    period: 'Aug 2024 - Present',
     location: 'Pune, India',
     description: [
       'Developing and maintaining Salesforce applications using Lightning Web Components (LWC), Apex, and Flow',
