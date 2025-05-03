@@ -27,10 +27,49 @@ const experiences: Experience[] = [
       'Salesforce',
       'Lightning Web Components',
       'Apex',
+      'JavaScript',
+      'HTML',
+      'CSS',
       'Flow',
+      'Triggers',
+      'Visualforce',
+      'Aura',
+      'SOQL',
+      'XML',
+      'CRM Software',
+      'Trailhead',
+      'Salesforce Sales Cloud',
+      'Salesforce Admin & Development',
+      'Agentforce AI',
       'Einstein AI',
-      'Agentforce',
-      'Integration'
+      'Software Development'
+    ]
+  },
+  {
+    title: 'Backend Bootcamp',
+    company: 'Go Academy · Internship',
+    period: 'Mar 2024 - Jun 2024',
+    location: 'Bengaluru, India',
+    description: [
+      'Completed backend bootcamp with hands-on training in Node.js, Express, and microservices architecture',
+      'Worked with both SQL and NoSQL databases: PostgreSQL and MongoDB',
+      'Built RESTful APIs and deployed backend services',
+      'Practiced computational thinking and gained foundational knowledge in web networking systems'
+    ],
+    technologies: [
+      'JavaScript',
+      'Node.js',
+      'Express',
+      'RESTful APIs',
+      'MongoDB',
+      'PostgreSQL',
+      'Microservices',
+      'Linux',
+      'Postman',
+      'MongoDB Compass',
+      'pgAdmin',
+      'GitHub',
+      'VS Code'
     ]
   }
 ];
@@ -72,9 +111,20 @@ const Experience = () => {
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                       {exp.title}
                     </h3>
-                    <p className="text-blue-600 dark:text-blue-400 font-medium">
-                      {exp.company}
-                    </p>
+                    {exp.company === 'Techila Global Services' ? (
+                      <a
+                        href="https://techilaservices.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                      >
+                        {exp.company}
+                      </a>
+                    ) : (
+                      <p className="text-blue-600 dark:text-blue-400 font-medium">
+                        {exp.company}
+                      </p>
+                    )}
                     <p className="text-gray-600 dark:text-gray-400">
                       {exp.period} • {exp.location}
                     </p>
@@ -106,4 +156,4 @@ const Experience = () => {
   );
 };
 
-export default Experience; 
+export default Experience;
